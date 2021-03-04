@@ -5,11 +5,10 @@
 
 
 
-@include("navbar1");
-@include("navbar2");
-@include("hover_catogery");
-
-@include("body_cart");
+@include("navbar1")
+@include("navbar2")
+@include("hover_catogery")
+@include("body_cart")
 
 
 

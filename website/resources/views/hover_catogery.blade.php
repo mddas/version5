@@ -1,4 +1,3 @@
-<!------->
 <div class="container">
 <div id="London" class="tabcontent">
   <div class="container">
