@@ -18,7 +18,7 @@
   <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <form class="d-flex" style="width:500px;">
-      <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" id="search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
@@ -40,4 +40,40 @@
   </div>
 </nav>
 </ul>
+
+<!-----------search ------>
+<div id="suggest">
+</div>
+<script type="text/javascript">
+            $(document).ready(function () {
+             
+                $('#search').on('keyup',function() {
+                    var query = $(this).val(); 
+                    //alert(query)
+                    $.ajax({
+                       
+                        url:"suggest",
+                  
+                        type:"GET",
+                       
+                        data:{'terms':query},
+                       
+                        success:function (data) {
+                          
+                            $('#suggest').html(data);
+                        }
+                    })
+                    // end of ajax call
+                });
+
+                
+                $(document).on('click', 'li', function(){
+                  
+                    var value = $(this).text();
+                    $('#suggest').val(value);
+                    $('#suggest').html("");
+                });
+            });
+        </script>
+<!------seaarch end----->
 
