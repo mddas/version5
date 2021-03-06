@@ -1,123 +1,75 @@
+
+
+<div style="background-image: url(/images/catogery.jpg); height: 50%; width: 100%; border: 1px solid black">
+
+
+
 <div class="container">
-<div id="London" class="tabcontent">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/laptop.jpg" class="card-img-top" alt="..."  height="190px">
-          
-        </div>
-      </div>
-      <div class="col-sm">
-        <h1>Electronics</h1>
-        <p>All Electronics</p>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/mobile.jfif" class="card-img-top" alt="..."   height="190px">
-          
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-3">
+<!--  One of three columns---->
+    </div>
+    <div class="col-6">
+      
+      
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/s1.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; raadius=15%">
+    </div>
+    <div class="carousel-item">
+      <img src="images/s2.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; radius=15%;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/s3.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; radius=15%;">
     </div>
   </div>
-  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-<div id="Paris" class="tabcontent">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/women.jpg" class="card-img-top" alt="..." height="190px">
-          <div class="card-body">
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <h1>CLOTHES</h1>
-  <p>All The Clothes</p>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/men.jpg" class="card-img-top" alt="..." height="190px">
-          
-        </div>
-      </div>
+      
+      
+      
+    </div>
+    <div class="col-3">
+      <!-----one of three column---->
     </div>
   </div>
-   
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/kirana.jpg" class="card-img-top" alt="..." height="190px">
-          
-        </div>
-      </div>
-      <div class="col-sm">
-        <h1>Kirana Pasal</h1>
-  <p>Basic Needs</p>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/kirana2.jpg" class="card-img-top" alt="..." height="190px">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<div class="scrollmenu">
+  <a href="#home">All</a>
+  <a href="#news">Fency</a>
+  <a href="#contact">Clothes</a>
+  <a href="#about">Mobile</a>
+  <a href="#support">Computer</a>
+  <a href="#blog">FastFoods</a>
+  <a href="#tools">Mobile Assories</a>  
+  <a href="#base">Electronics</a>
+  <a href="#custom">Computer Assories</a>
+  <a href="#more">Shoes</a>
+  <a href="#logo">Glasses</a>
+  <a href="#friends">Books</a>
+  <a href="#partners">Win</a>
+  <a href="#people">Home Assories</a>
+  <a href="#work">HardWare</a>
 </div>
 
-<div id="Oslo" class="tabcontent">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/fastfood.jpg" class="card-img-top" alt="..." height="190px"> 
-          
-        </div>
-      </div>
-      <div class="col-sm">
-        <h1>Food Plus Delivery </h1>
-        <p>All type of Food order and their Delivery System</p>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="images/curior.jpg" class="card-img-top" alt="..." height="190px">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
+
+
+
+
 </div>
 
-<button class="tablink" onclick="openCity('London', this, 'rgb(189, 147, 70)')" id="defaultOpen">Electronics</button>
-<button class="tablink" onclick="openCity('Paris', this, 'rgb(189, 147, 70)')">Clothes</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'rgb(189, 147, 70)')">Accessories</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'rgb(189, 147, 70)')">Food Plus Delivery</button>
-</div>
-<script>
-function openCity(cityName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
 

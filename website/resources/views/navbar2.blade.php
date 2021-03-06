@@ -1,49 +1,43 @@
-  
-  <ul class="container nav ">
-  <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
+<nav class="container navbar navbar-expand-lg navbar-light bg-light" style="font-size:20px;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="images/jello.svg" alt="" width="60" height="50" class="d-inline-block align-top">
-    
-    </a>
-    <a class="navbar-brand" href="#">CATEGORY</a>
-
-    <!-- Image and text -->
-
-
-    
+    <a class="navbar-brand me-5" href="#" style="margin-top:5px"><img src="images/jello.svg" alt="" width="60" height="50" class="d-inline-block align-top"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-brand active me-5" aria-current="page" href="#">CATOGERY</a>
+        </li>
+        <li class="nav-item">
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+        <button class="btn btn-outline-success me-5" type="submit">Search</button>
+      </form>
+      </li>
+      <li class="nav-item">
+      
+          <a class="navbar-brand me-5" href="#"><img src="/images/cart.svg" alt="" width="60" height="50" class="d-inline-block align-top"></a>
+        </li>
+        <li class="nav-item">
+      
+      <a class="navbar-brand me-5" href="#"><img src="/images/track2.svg" alt="" width="60" height="50" class="d-inline-block align-top"></a>
+    </li>
+      </ul>
+      
+    </div>
   </div>
 </nav>
-  <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <form class="d-flex" style="width:500px;">
-      <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" id="search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="cart">
-      <img src="/images/cart.svg" alt="" width="60" height="50" class="d-inline-block align-top">
 
-    </a>
-  </div>
-</nav>
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="track">
-      <img src="/images/track2.svg" alt="" width="60" height="50" class="d-inline-block align-top">
 
-    </a>
-  </div>
-</nav>
-</ul>
-
-<!-----------search ------>
-<div id="suggest">
-</div>
+<!-----------search -
+<ul class="list-group" style="margin-left:20%; width:20%; position:relative">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>------>
 <script type="text/javascript">
             $(document).ready(function () {
              
@@ -67,10 +61,10 @@
                 });
 
                 
-                $(document).on('click', 'li', function(){
+                $(document).on('click', 'a', function(){
                   
                     var value = $(this).text();
-                    $('#suggest').val(value);
+                    $('#search').val(value);
                     $('#suggest').html("");
                 });
             });

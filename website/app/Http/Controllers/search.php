@@ -26,7 +26,8 @@ class search extends Controller
             $data = DB::table('store')->where("itemname","LIKE","%$term%")->orwhere("catogery","LIKE","%$term%")->orwhere("describe","LIKE","%$term%")->get();
             }
              foreach ($data as $dat) {
-             echo "<li>".$dat->itemname."</li>";
+             
+             echo "<a class='list-group-item list-group-item-ation border-1'>".$dat->itemname."</a>";
              }
         }
     }

@@ -1,4 +1,7 @@
-<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+<div class="container alert alert-warning alert-dismissible fade show" style="padding:0;" role="alert">
+  
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding:0">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="images/jello.svg" alt="" width="30" height="25" class="d-inline-block align-top"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,3 +31,7 @@
       </div>
     </nav>
 
+
+
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>

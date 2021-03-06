@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!----it is for ajax--->
 <link href="/css/addproduct.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
@@ -110,10 +111,10 @@ English (UK) <a href="">nepali</a><a href="">hindi</a><a href=""> اردو</a><a
                 });
 
                 
-                $(document).on('click', 'li', function(){
+                $(document).on('click', 'a', function(){
                   
                     var value = $(this).text();
-                    $('#suggest').val(value);
+                    $('#search').val(value);
                     $('#suggest').html("");
                 });
             });
