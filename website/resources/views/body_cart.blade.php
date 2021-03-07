@@ -56,7 +56,7 @@
   <a href=productview?productid={{$data->productid}}>
       <div class="card" style="width: 15rem;">
             <img src={{$data->image}} class="card-img-top" alt="..." height="190px" style="border-radius: 15%;">
-        <div class="card-body" style = "font-family:Times New Roman,Times,serif;font-size:16px;font-style:italic;">
+        <div class="card-body" style = "font-family:Times New Roman,Times,serif;font-size:16px;font-style:italic;text-decoration:none;">
             <h4 class="card-text">{{$data->itemname}}</h4>
             <p class="card-text"><font color='red'>Rs: {{$data->price}}</font></p1>
         </div>

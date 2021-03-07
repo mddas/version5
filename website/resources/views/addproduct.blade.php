@@ -2,6 +2,8 @@
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!----it is for ajax--->
 <link href="/css/addproduct.css" type="text/css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -38,7 +40,9 @@
 <p>search product<br></p>
 <input type="text" placeholder="Search Product " name="search" id="search">
 </form>
-<div id="suggest">
+<ul class="list-group" id="suggest" style="margin-top:-15px; width:22%; position:absolute; z-index: 999; text-decoration:none; font-family:Times New Roman,Times,serif;font-size:22px;font-style:italic;">
+  
+</ul>
 
 </div>
 @if(!empty($inputdata)) 

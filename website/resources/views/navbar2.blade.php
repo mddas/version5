@@ -30,14 +30,10 @@
 </nav>
 
 
-<!-----------search -
-<ul class="list-group" style="margin-left:20%; width:20%; position:relative">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>------>
+<!-----------search ----->
+<ul class="list-group" id="suggest" style="margin-left:29.5%;margin-top:-23px; width:16%; position:absolute; z-index: 999">
+  
+</ul>
 <script type="text/javascript">
             $(document).ready(function () {
              

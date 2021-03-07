@@ -20,7 +20,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/s1.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; raadius=15%">
+      <img src="images/s1.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; radius=15%;postion:relative">
     </div>
     <div class="carousel-item">
       <img src="images/s2.jpg" class="d-block w-100" alt="..." style=" border: 5px solid white; radius=15%;">

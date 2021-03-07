@@ -13,7 +13,7 @@
     <div class="col-sm">
       <img src={{$an_data->image}} alt="..." width="500px" height="400" style="border-radius: 15%;">
     </div>
-    <div class="col-sm" style = "font-family:Times New Roman,Times,serif;font-size:22px;font-style:italic; margin-top:80px;">
+    <div class="col-sm" style = "font-family:Times New Roman,Times,serif;font-size:22px;font-style:italic; margin-top:80px;text-decoration:none;">
     
       <p>product name :- {{$an_data->itemname}}</p>
       <p><font color="red">price Rs :- {{$an_data->price}}</font></p>
